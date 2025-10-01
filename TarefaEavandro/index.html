@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Hóspedes - Hotel Feliz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Satisfação</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Organização</h2>
+            <form id="hospede-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo e numero da chamada</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="quarto">O que voce achou sobre a organização da sala :</label>
+                    <input type="text" id="quarto" required>
+                </div>
+                <div class="form-group">
+                    <label for="data">Que dia foi a organização</label>
+                    <input type="date" id="data" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="report-container">
+            <h2>Relatório Diário de Hóspedes</h2>
+            <table id="hospede-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quarto</th>
+                        <th>Data de Entrada</th>
+                    </tr>
+                </thead>
+                <tbody id="hospede-list">
+                    </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Feliz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
