@@ -1,0 +1,10 @@
+ipi = float(input("qual o valor da ipi (em o simbolo de porsentagem) "))
+cod1 = float(input("qual o codigo do produto 1 "))
+val1 = float (input("valor do produto 1 "))
+quan1 = float(input("qual a quantidade de produto 1 no estoque  "))
+cod2 = float(input("qual o codigo do produto 2 "))
+val2 = float (input("valor do produto 2 "))
+quan2 = float(input("qual a quantidade de produto 2 no estoque  "))
+
+resultado = (val1 * quan1 + val2 * quan2) * (ipi/100 + 1)
+print(f"o valor total a ser pago é: {resultado:g}")
