@@ -1,0 +1,9 @@
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+
+if num1 < num2:
+    print(f"O número menor é: {num1:g}")
+elif num2 < num1:
+    print(f"O número menor é: {num2:g}")
+
+    #OTAVIO
